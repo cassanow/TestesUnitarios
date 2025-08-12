@@ -2,7 +2,7 @@
 
 namespace TestesUnitarios.Interface.Repository;
 
-public interface IPessoaInterface
+public interface IPessoaRepository
 {
     Task<List<Pessoa>> GetPessoas();
     

@@ -5,7 +5,7 @@ using TestesUnitarios.Model;
 
 namespace TestesUnitarios.Repository;
 
-public class PessoaRepository : IPessoaInterface
+public class PessoaRepository : IPessoaRepository
 {
     private readonly Context _context;
 
