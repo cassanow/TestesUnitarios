@@ -52,6 +52,10 @@ ScaffoldingReadMe.txt
 
 .idea/runConfigurations/
 
+.vs/
+
+**/TestResults/
+**/TestesUnitariosTest/
 
 Thumbs.db
 ehthumbs.db
