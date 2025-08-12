@@ -1,5 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using TestesUnitarios.Database;
+using TestesUnitarios.Interface.Repository;
+using TestesUnitarios.Repository;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,6 +11,12 @@ builder.Services.AddOpenApi();
 
 builder.Services.AddDbContext<Context>(
     options => options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+builder.Services.AddControllers();
+
+builder.Services.AddEndpointsApiExplorer();
+
+builder.Services.AddScoped<IPessoaInterface, PessoaRepository>();
 
 var app = builder.Build();
 
